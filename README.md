@@ -13,8 +13,7 @@ This project is a backend Loan API for managing loans in a bank. Employees can c
 ## Setup Instructions
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd credit-module
+   git clone https://github.com/ilkmurat/credit-module
    ```
 2. Build the project:
    ```bash
