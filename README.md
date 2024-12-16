@@ -102,8 +102,8 @@ This project is a backend Loan API for managing loans in a bank. Employees can c
   Scalability: Roles can be assigned and updated at runtime without restarting the application.
   This approach ensures dynamic and flexible role management, ideal for applications where roles are frequently updated or vary per user.
 
+![Screen Shot 2024-12-16 at 02.54.02.png](..%2F..%2F..%2FScreen%20Shot%202024-12-16%20at%2002.54.02.png)
+
 ## Author
 - Name: Murat ilk
 - Contact: ilkmuratt@gmail.com
-
-
