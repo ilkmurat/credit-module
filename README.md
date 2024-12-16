@@ -47,6 +47,7 @@ This project is a backend Loan API for managing loans in a bank. Employees can c
 
 
 ## API Documentation
+### You can use this postman collection ;  credit-module/LoanAPICollection.json
 ### Endpoints
 1. **Create Loan**:
     - `POST /api/loans`
@@ -83,9 +84,6 @@ This project is a backend Loan API for managing loans in a bank. Employees can c
 
 4. **List Installments**:
     - `GET /api/installments/{loanId}`
-
-## You can use this postman collection ;  credit-module/LoanAPICollection.json
-
 
 ## Known Issues
 - Lombok runtime issues resolved by switching to manual encapsulation. You can resolve this issue like this;
