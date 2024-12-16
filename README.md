@@ -85,6 +85,8 @@ This project is a backend Loan API for managing loans in a bank. Employees can c
 4. **List Installments**:
     - `GET /api/installments/{loanId}`
 
+ <img width="774" alt="Screen Shot 2024-12-16 at 02 54 02" src="https://github.com/user-attachments/assets/ec9f1e5a-c7ee-4449-a25f-e61cfe179256" />
+
 ## Known Issues
 - Lombok runtime issues resolved by switching to manual encapsulation. You can resolve this issue like this;
   Set annotation processing on: IntelliJ Settings(Preferences) -> Compiler -> Annotation
@@ -101,8 +103,6 @@ This project is a backend Loan API for managing loans in a bank. Employees can c
   Dynamic Updates: Changes in roles do not require code changes; updating the database is enough.
   Scalability: Roles can be assigned and updated at runtime without restarting the application.
   This approach ensures dynamic and flexible role management, ideal for applications where roles are frequently updated or vary per user.
-
-  <img width="774" alt="Screen Shot 2024-12-16 at 02 54 02" src="https://github.com/user-attachments/assets/ec9f1e5a-c7ee-4449-a25f-e61cfe179256" />
 
 
 
