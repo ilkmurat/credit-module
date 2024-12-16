@@ -16,7 +16,6 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -53,11 +52,12 @@ class CreditModuleApplicationTests {
 
     @BeforeEach
     void setUp() {
-        MockitoAnnotations.openMocks(this);
+       // MockitoAnnotations.openMocks(this);
         loanConverter =new LoanMapper();
         customer = new Customer();
         customer.setId(1L);
-        customer.setName("John");
+        customer.setName("Murat");
+        customer.setSurname("ilk");
         customer.setCreditLimit(10000.0);
         customer.setUsedCreditLimit(2000.0);
 
@@ -72,7 +72,6 @@ class CreditModuleApplicationTests {
     @Test
     void testCreateLoan_Success() {
         when(customerRepository.findById(1L)).thenReturn(Optional.of(customer));
-        //when(customerRepository.save(any(Customer.class))).thenAnswer(invocation -> invocation.getArgument(0));
         when(loanRepository.save(any(Loan.class))).thenAnswer(invocation -> invocation.getArgument(0));
         when(loanInstallmentRepository.saveAll(anyList())).thenReturn(Collections.emptyList());
 
@@ -82,10 +81,7 @@ class CreditModuleApplicationTests {
         assertEquals(5000.0 , response.getLoanAmount());
         assertEquals(12, response.getNumberOfInstallments());
 
-        verify(customerRepository).save(customer);
-        //verify(customerRepository).save(eq(customer));
-
-
+        verify(customerRepository).save(eq(customer));
     }
 
     @Test
