@@ -47,7 +47,7 @@ This project is a backend Loan API for managing loans in a bank. Employees can c
 
 
 ## API Documentation
-### You can use this postman collection ;  credit-module/LoanAPICollection.json
+### You can use this postman collection ;  credit-module/Loan API Collection.postman_collection.json
 ### Endpoints
 1. **Create Loan**:
     - `POST /api/loans`
